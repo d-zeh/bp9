@@ -66,7 +66,7 @@ if (temperature >= 80 && rain === true) {
   let clothes = "Sun's out, guns out my guy. Sky's out, thighs out. Show off the beasts!"
 } else if (temperature >60 && temperature <80) {
   let clothes = "Depending on the season, perhaps a knitted collarless polo with contrasted shorts. above knee if you're less than 6 ft."
-} else if (temperature <= 60) {
+} else (temperature <= 60) {
   let clothes = "Steal your boyfriends NorthFace. He doesn't wear it anyway."
 }
 console.log(clothes);
