@@ -112,7 +112,7 @@ let passingScore = 7;
 */
 
 while (score < passingScore) {
-  console.log(`Your score is not high enoight` + score);
+  console.log(`Your score is not high enough` + score);
   score ++;
 }
 
