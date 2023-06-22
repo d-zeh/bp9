@@ -14,3 +14,6 @@ if(jonSnowAttack > jaimeLannisterAttack) {
 } else {
     console.log(`its a tie`)
 }
+
+let jonSnowHealth = 100
+let jonSnowDefense = 0

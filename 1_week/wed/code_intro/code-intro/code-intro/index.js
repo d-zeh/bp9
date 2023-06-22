@@ -269,8 +269,3 @@ console.log('New Total: ', newTotal)
 
 let savings = 1 - (newTotal / total)
 
-
-
-
-
-
