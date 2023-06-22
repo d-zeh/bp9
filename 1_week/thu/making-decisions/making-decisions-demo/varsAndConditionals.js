@@ -5,7 +5,7 @@
 */ 
 
 let jonSnowAttack = 25
-let jaimeLannisterAttack = 25
+let jaimeLannisterAttack = 35
 
 if(jonSnowAttack > jaimeLannisterAttack) {
     console.log(`Jon's attack is greather than Jaime's`)
