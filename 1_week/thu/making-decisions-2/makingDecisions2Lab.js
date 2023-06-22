@@ -46,7 +46,7 @@ let evensArr = []
 */
 
 for (let i = 0; i <10; i++) {
-  if (nums[i] % === 0) {
+  if (nums[i] % 2 === 0) {
     evensArr.push(nums[i]);
   }
 }
@@ -68,7 +68,7 @@ var score = 74
 if (score >= 90) {
   console.log("A")
 } else if (score >= 80) {
-  
+
 }
 
 
@@ -84,7 +84,7 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
   Create a variable named 'someNum' and set it equal to the fifth value of the 'myFavoriteNumbers' array.
 */
 
-//Code Here
+let someNum = myFavoriteNumbers[4]
 
 
 ////////// PROBLEM 7 //////////
@@ -92,7 +92,12 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 // Subscripting (accessing values using their index) an array can fail. What happens if you subscript to the 7th element, but there are not 7 elements in the array? Let's write some code to check for that. 
 // Use an if statement to check the length of the 'myFavoriteNumbers' array. If it's less than 7, log 'There are not enough elements in this array' to the console. If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element in the array. (Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
 
-//Code Here
+let n = myFavoriteNumbers.length();
+if (n < 7) {
+  console.log("There is not enough elements in this array");
+} else {
+  myFavoriteNumbers[6] = someNum;
+}
 
 
 ////////// PROBLEM 8 //////////
@@ -103,7 +108,11 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 
 // Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
 
-//Code Here
+for (let i = 0; i < listOfNumbers.length(); i++) {
+  if (listOfNumbers[i] % 3 === 0) {
+    console.log(`${listOfNumbers[i]} is divisible by 3`);
+  }
+}
 
 
 ////////// PROBLEM 9 //////////
@@ -115,7 +124,9 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
   Loop backwards, starting at the end of the 'letters' array. Console log every item in the array.
 */
 
-//Code Here
+for (let i = letters.length(); i >= 0; i--) {
+  console.log(letters[i]);
+}
 
 
 ////////// Advanced Problems //////////
