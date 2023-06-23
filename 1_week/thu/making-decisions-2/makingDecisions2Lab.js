@@ -163,13 +163,13 @@ switch(letterGrade) {
   case 'B':
     console.log("The student is doing well.");
     break;
-  case letterGrade === 'C': 
+  case 'C': 
     console.log("The student is doing alright.");
     break;
-  case letterGrade === 'D': 
+  case 'D': 
     console.log("The student is not doing very well.");
     break;
-  case letterGrade === 'F': 
+  case 'F': 
     console.log("The student is failing.");
     break;
   default:
