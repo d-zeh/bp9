@@ -157,19 +157,19 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 switch(letterGrade) {
-  case letterGrade === A: 
+  case letterGrade === 'A': 
     console.log("The student is doing excellently.");
     break;
-  case letterGrade === B:
+  case letterGrade === 'B':
     console.log("The student is doing well.");
     break;
-  case letterGrade === C: 
+  case letterGrade === 'C': 
     console.log("The student is doing alright.");
     break;
-  case letterGrade === D: 
+  case letterGrade === 'D': 
     console.log("The student is not doing very well.");
     break;
-  case letterGrade === F: 
+  case letterGrade === 'F': 
     console.log("The student is failing.");
     break;
   default:
