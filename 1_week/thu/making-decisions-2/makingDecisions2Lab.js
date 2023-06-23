@@ -68,8 +68,15 @@ var score = 74
 if (score >= 90) {
   console.log("A")
 } else if (score >= 80) {
-
+  console.log("B")
+} else if (score >= 70) {
+  console.log("C")
+} else if (score >= 60) {
+  console.log("D")
+} else {
+  console.log("F")
 }
+
 
 
 ////////// Intermediate Problems //////////
@@ -140,6 +147,7 @@ let letterGrade = 'B'
 
 /* Use a switch statement on 'letterGrade' and console.log the appropriate response.
 
+
 If A: "The student is doing excellently."
 If B: "The student is doing well."
 If C: "The student is doing alright."
@@ -148,8 +156,25 @@ If F: "The student is failing."
 If the letter grade is not one of the above letters, console.log 'Not an eligible grade.'
 */
 
-//Code Here
-
+switch(letterGrade) {
+  case A: 
+    console.log("The student is doing excellently.");
+    break;
+  case B:
+    console.log("The student is doing well.");
+    break;
+  case C: 
+    console.log("The student is doing alright.");
+    break;
+  case D: 
+    console.log("The student is not doing very well.");
+    break;
+  case F: 
+    console.log("The student is failing.");
+    break;
+  default:
+    console.log('Not an eligible grade.');
+}
 
 
 ////////// PROBLEM 11 //////////
@@ -176,4 +201,17 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
   ...
 */
 
-//Code Here
+for(let i = 1; i <= 100; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log('DevMountain')
+  }
+  else if( i % 3 === 0) { 
+    console.log('Dev')
+  }
+  else if (i % 5 === 0) {
+    console.log('Mountain')
+  }
+  else {
+    console.log(i)
+  }
+}
