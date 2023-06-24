@@ -23,7 +23,7 @@ colorCopy.push('orange');
 const numbers = [1, 2, 3, 4, 5]
 
 let middleNums = numbers.slice(1, 4);
-console.log(middleNums);
+//console.log(middleNums);
 
 
 //////////////////PROBLEM 4////////////////////
