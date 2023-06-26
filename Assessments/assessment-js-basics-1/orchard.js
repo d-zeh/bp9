@@ -90,7 +90,7 @@ console.log(totalAcres);
 
 let weekTotal = 7;
 let averageDailyAcres = totalAcres / weekTotal;
-console.log(averageDailyAcres);
+console.log(`Average Daily Acres ${averageDailyAcres}`);
 
 
 
@@ -133,7 +133,7 @@ while( acresLeft > 0) {
     acresLeft = acresLeft - averageDailyAcres;
 }
 
-console.log(days);
+console.log(`Days needed to Harvest remaining acres ${days}`);
 
 
 
@@ -163,9 +163,25 @@ console.log(days);
 
 // CODE HERE
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+//copy o.g. arrays
+
+let fujiTons = fujiAcres.slice();
+let galaTons = galaAcres.slice();
+let pinkTons = pinkAcres.slice();
+
+//create loop to convert acres to tons
+
+for (let i = 0; i < 7; i++) {
+    fujiTons[i] = fujiTons[i] * 6.5;
+    galaTons[i] = galaTons[i] * 6.5;
+    pinkTons[i] = pinkTons[i] * 6.5; 
+}
+
+//print in tons
+
+console.log(`Fuji Tons: ${fujiTons}`);
+console.log(`Gala Tons: ${galaTons}`);
+console.log(`Pink Tons: ${pinkTons}`);
 
 
 
@@ -190,13 +206,32 @@ console.log(days);
 
 // CODE HERE 
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+//Set lbs to 0
 
+let fujiPounds = 0;
+let galaPounds = 0;
+let pinkPounds = 0;
 
+//tally up tons for each type of apple
 
+for (let n = 0; n < 7; n++) {
+    fujiPounds = fujiPounds + fujiTons[i];
+    galaPounds = galaPounds + galaTons[i];
+    pinkPounds = pinkPounds + pinkTons[i];
+}
+console.log(`total fuji tons: ${fujiPounds}`);
+console.log(`total gala tons: ${galaPounds}`);
+console.log(`total pink tons: ${pinkPounds}`);
 
+//convert tons to lbs
+
+fujiPounds = fujiPounds *2000;
+galaPounds = galaPounds *2000;
+pinkPounds = pinkPounds *2000;
+
+console.log(`total fuji pounds: ${fujiPounds}`);
+console.log(`total gala pounds: ${galaPounds}`);
+console.log(`total pink pounds: ${pinkPounds}`);
 
 
 // PROBLEM 6
