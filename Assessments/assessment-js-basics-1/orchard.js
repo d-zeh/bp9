@@ -63,7 +63,7 @@ for(let g = 0; g < 7; g++) {
 }
 
 for(let p = 0; p < 7; p++) {
-    totalPink = pinkAcresAcres[p] + totalPink;
+    totalPink = pinkAcres[p] + totalPink;
 }
 
 let totalAcres = totalFuji + totalGala + totalPink;
