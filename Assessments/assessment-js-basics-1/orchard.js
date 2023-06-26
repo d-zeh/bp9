@@ -66,6 +66,8 @@ for(let p = 0; p < 7; p++) {
     totalPink = pinkAcres[p] + totalPink;
 }
 
+//summed the sum of each orchard and stored as total acres
+
 let totalAcres = totalFuji + totalGala + totalPink;
 console.log(totalAcres);
 
@@ -84,7 +86,11 @@ console.log(totalAcres);
     Log `averageDailyAcres` to the console.
 */
 
-// CODE HERE
+//divide total by 7
+
+let weekTotal = 7;
+let averageDailyAcres = totalAcres / weekTotal;
+console.log(averageDailyAcres);
 
 
 
