@@ -252,9 +252,11 @@ console.log(`total pink pounds: ${pinkPounds}`);
 
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+let fujiProfit = fujiPounds * fujiPrice;
+let galaProfit = galaPounds * galaPrice;
+let pinkProfit = pinkPounds * pinkPrice;
+
+console.log(`Fuji Profit, Gala Profit, Pink Profit ${fujiProfit}, ${galaProfit}, ${pinkProfit}`);
 
 
 
@@ -271,4 +273,5 @@ console.log(`total pink pounds: ${pinkPounds}`);
     Log `totalProfit` to the console.
 */
 
-// CODE HERE
+let totalProfit = fujiProfit + galaProfit + pinkProfit;
+console.log(`Total Profit: ${totalProfit}`);
