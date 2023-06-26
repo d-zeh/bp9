@@ -128,7 +128,12 @@ console.log(averageDailyAcres);
 let acresLeft = 174 
 let days = 0
 
-// CODE HERE
+while( acresLeft > 0) {
+    days = days + 1;
+    acresLeft = acresLeft - averageDailyAcres;
+}
+
+console.log(days);
 
 
 
