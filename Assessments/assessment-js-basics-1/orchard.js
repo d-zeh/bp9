@@ -54,15 +54,15 @@ let totalGala = 0;
 let totalPink = 0;
 
 //Create loop for each type of apple and map 
-for(let f = 0; l < 7; l++) {
+for(let f = 0; f < 7; l++) {
     totalFuji = fujiAcres[f] + totalFuji;
 }
 
-for(let g = 0; l < 7; l++) {
+for(let g = 0; g < 7; l++) {
     totalGala = galaAcres[g] + totalGala;
 }
 
-for(let p = 0; l < 7; l++) {
+for(let p = 0; p < 7; l++) {
     totalPink = pinkAcresAcres[p] + totalPink;
 }
 
