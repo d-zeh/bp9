@@ -215,9 +215,9 @@ let pinkPounds = 0;
 //tally up tons for each type of apple
 
 for (let n = 0; n < 7; n++) {
-    fujiPounds = fujiPounds + fujiTons[i];
-    galaPounds = galaPounds + galaTons[i];
-    pinkPounds = pinkPounds + pinkTons[i];
+    fujiPounds = fujiPounds + fujiTons[n];
+    galaPounds = galaPounds + galaTons[n];
+    pinkPounds = pinkPounds + pinkTons[n];
 }
 console.log(`total fuji tons: ${fujiPounds}`);
 console.log(`total gala tons: ${galaPounds}`);
